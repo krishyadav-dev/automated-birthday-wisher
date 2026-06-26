@@ -36,6 +36,11 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+          
+      - name: Create the CSV file from Secrets
+        # This takes the secret text and saves it as a real file
+        run: |
+          echo "${{ secrets.BIRTHDAYS_CSV_DATA }}" > birthdays.csv
 
       - name: Run script
         env:

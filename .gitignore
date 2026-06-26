@@ -3,6 +3,7 @@
 *.env
 secrets.txt
 credentials.json
+birthdays.csv
 
 # Python
 __pycache__/
@@ -18,3 +19,4 @@ venv/
 # OS
 .DS_Store
 Thumbs.db
+
